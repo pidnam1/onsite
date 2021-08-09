@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends 'service/base.html' %}
+{% block content %}
+{% load static %}
+
+
+<html lang="en">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/projects.css' %}">
+{% load crispy_forms_tags %}
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md">
+<h1>Edit</h1>
+<h2>{{product.name}}</h2>
+
+        </div>
+        </div>
+<form method="post">
+
+    {% csrf_token %}
+    <div class="col-md-4">
+    {% for field in form %}
+<p>
+
+        {{ field|as_crispy_field}}
+
+        {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+        {% endfor %}
+      </p>
+
+    {% endfor %}
+    <p>{{error}}</p>
+    <button type="submit" class="clear btn btn-success">Save Changes</button>
+    <button type="submit" class="btn btn-success" name="delete">Delete</button>
+        </div>
+  </form>
+    </div>
+</body>
+</html>
+{% endblock %}

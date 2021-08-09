@@ -1,0 +1,154 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/templates/scrolling-nav)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+header {
+  padding: 100px 0 150px;
+  background-color: #2B7A78;
+}
+header .overlay {
+  color: #3AAFA9;
+  opacity: 0.5;
+  z-index: 1;
+}
+body{
+background-color:#FEFFFF;
+}
+
+section {
+  padding: 100px 0;
+}
+
+@font-face {
+  font-family: Visuelt-Regular;
+  src: url('../fonts/Visuelt/VisueltPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: Visuelt-Thin;
+  src: url('../fonts/Visuelt/VisueltPro-Thin.ttf');
+}
+
+@font-face {
+  font-family: Visuelt-Bold;
+  src: url('../fonts/Visuelt/Visuelt-Bold.ttf');
+}
+
+@font-face {
+  font-family: Visuelt-Light;
+  src: url('../fonts/Visuelt/VisueltPro-Light.ttf');
+}
+
+@font-face {
+  font-family: Quixote-Obsolete;
+  src: url('../fonts/Quixote_Obsolete2/Quixote-Obsolete.ttf');
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url('../fonts/montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: Quixote-Obsolete;
+  src: url('../fonts/Quixote_Obsolete2/Quixote-Obsolete.ttf');
+}
+
+/*==================================================================
+[ Text ]*/
+.lead {
+  font-family: Visuelt-Thin;
+  font-size: 30px;
+  line-height: 1.4;
+  color: #FEFFF
+}
+
+.txt2 {
+  font-family: Visuelt-Regular;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #999999;
+}
+
+.navbar-brand {
+  font-family: Visuelt-Light;
+  font-size: 36px;
+  line-height: 1.4;
+  color: transparent;
+
+}
+
+h1{
+font-family: Visuelt-Light;
+}
+a{
+color: #FEFFFF;
+}
+h2,h3,h4,h5,h6{
+    font-family: Visuelt-Light;
+}
+p{
+font-family: Visuelt-Light;
+}
+li{
+font-family: Visuelt-Light;
+}
+.navbar-dark{
+color: transparent;
+background: transparent;
+}
+.primary{
+color: #3AAFA9;
+}
+
+.text-center{
+padding-top: 20px;
+}
+.btn{
+background-color: #FEFFFF;
+color: #3AAFA9;
+text-align: center;
+border: none;
+
+}
+
+.col-md{
+padding-top: 25px;
+}
+
+.col-sm{
+padding-top: 25px;
+
+}
+.cardbut{
+color: #FEFFFF;
+background-color: #FEFFFF;
+border-color: #FEFFFF;
+border: none;
+hover:none;
+}
+.cardbut:hover{
+color: #FEFFFF;
+background-color: #FEFFFF;
+border-color: #FEFFFF;
+border: none;
+hover:none;
+}
+.tests{
+transition: box-shadow 0.3s ease-in-out;
+}
+
+.tests:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.tests1{
+transition: box-shadow 0.3s ease-in-out;
+transition: border-color 0.3s ease-in-out;
+}
+
+.tests1:hover {
+  border-color: #3AAFA9;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}

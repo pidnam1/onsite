@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+{% extends 'service/base.html' %}
+{% block content %}
+
+{% load static %}
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/loggedin.css' %}">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+<body>
+<div class="container">
+<div class="row">
+   <div class="col-md">
+
+
+
+
+    <div class="tests card btn-no-waves" style=" height: 27rem;">
+
+      <div class="card-body">
+         <i class="card-title float-right fas fa-boxes fa-2x" style="color: #3AAFA9; padding-top: 10px; padding-right: 20px;"></i>
+        <h1 class="card-title">Products</h1>
+        <p class="card-text">Modify your Products</p>
+        <a href="{% url 'products' %}" class="btn btn-success stretched-link">Enter</a>
+      </div>
+
+    </div>
+        </div>
+
+
+   <div class="col-md">
+           <div class="tests card btn-no-waves" style=" height: 27rem;">
+
+      <div class="card-body">
+        <i class="card-title float-right far fa-clipboard fa-2x" style="color: #3AAFA9; padding-top: 10px; padding-right: 20px;"></i>
+        <h1 class="card-title">Records</h1>
+        <p class="card-text">Check your Records</p>
+        <a href="{% url 'orders' %}" class="btn btn-success stretched-link">Enter</a>
+      </div>
+
+    </div>
+
+
+            </div>
+</div>
+
+
+ <div class="row">
+   <div class="col-sm">
+           <div class="tests card btn-no-waves" style = "width: 48.75%;">
+
+      <div class="card-body">
+     <i class="card-title float-right fas fa-user fa-2x" style="color: #3AAFA9; padding-top: 10px; padding-right: 20px;"></i>
+        <h4 class="card-title">My Profile</h4>
+        <p class="card-text">Edit your profile and account settings</p>
+        <a href="{% url 'profile' %}" class="btn btn-success stretched-link">Enter</a>
+      </div>
+
+    </div>
+
+
+            </div>
+        </div>
+
+</div>
+
+
+</body>
+</html>
+{% endblock %}

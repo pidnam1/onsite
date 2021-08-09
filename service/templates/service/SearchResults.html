@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% extends 'service/base.html' %}
+{% block content %}
+{% load static %}
+
+
+<html lang="en">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link href="{% static 'css/order.css' %}" rel="stylesheet">
+
+
+
+<body>
+<div class="container">
+    <div class="row">
+   <div class="col-sm">
+
+<h1 style = "text-align:center;">Results </h1>
+<h2 style = "text-align:center;">{{search_product}} </h2>
+
+                     </div>
+</div>
+{% for product in cheapest_products %}
+    <div class="row">
+        <div class="col-md">
+<form method="post">
+    {% csrf_token %}
+
+
+<div class="card">
+
+      <div class="card-body">
+
+        <h4 class="card-title">{{product.profile.business_name}}</h4>
+        <p>Price: {{product.price}}</p>
+          <p>Description: {{product.description}}</p>
+          <p>Address: {{product.profile.address}}, {{product.profile.region}}</p>
+          {% for field in form %}
+          <p>
+          {{field }}
+          {% endfor %}
+              </p>
+        <button type="submit" class="btn btn-success" name = "name" value ={{product.profile.business_name}}>Add to Cart</button>
+      </div>
+
+    </div>
+                 </div>
+
+    </div>
+
+    </form>
+{% endfor %}
+    </div>
+</body>
+</html>
+{% endblock %}

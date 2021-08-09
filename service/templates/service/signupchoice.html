@@ -1,0 +1,33 @@
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/LogIn/css/main.css' %}">
+<body style="background-color: #FEFFFF;">
+<div class="container">
+    <div class = "txt3">
+<h2>Welcome</h2>
+        </div>
+    <div class = "txt3">
+<p>Are you a:</p>
+    </div>
+     <div class="row justify-content-md-center">
+<div class="card">
+
+      <div class="card-body">
+<a href="{% url 'manufacturer_signup' %}" class="btn btn-primary">Manufacturer</a>
+          </div>
+    </div>
+ <div class="col-md-auto">
+
+    </div>
+         <div class="card">
+
+      <div class="card-body">
+<a href="{% url 'company_signup' %}" class="btn btn-primary">Company</a>
+  </div>
+    </div>
+  </div>
+    </div>
+
+</body>

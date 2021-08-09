@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% extends 'service/base.html' %}
+{% block content %}
+{% load static %}
+
+
+<html lang="en">
+<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<link href="{% static 'css/projects.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+
+<body>
+<div class="container">
+    <div class="row">
+   <div class="col-sm">
+
+
+<h1 style = "text-align:center;">Cart</h1>
+       <div class="col-sm" style = "text-align:center;">
+
+
+
+        <i class="fas fa fa-shopping-cart fa-2x" style="color: #3AAFA9;"></i>
+          <span class="cart-basket d-flex align-items-center justify-content-center" >
+
+          </span>
+           </div>
+               </div>
+</div>
+
+
+
+
+    <div class="row">
+   <div class="col-sm" style = "text-align:right;">
+       <button type="submit" class="clear btn btn-success" name = "edit" value ={{product.profile.business_name}}>Edit</button>
+    <button type="submit" class="btn btn-success" name = "name" value ={{product.profile.business_name}}>Checkout</button>
+
+                     </div>
+</div>
+{% for product,total in full_list %}
+<div class="row">
+        <div class="col-md">
+<div class="card">
+
+      <div class="card-body">
+
+        <h4 class="card-title">{{product.business_name}}</h4>
+          <p>Product Name: {{product.name}}</p>
+        <p>Price: {{product.price}}</p>
+          <p>Description: {{product.description}}</p>
+            <p>Quantity Ordered: {{product.quantity}}</p>
+            <p>Total Cost: {{total}}</p>
+      </div>
+
+    </div>
+            </div>
+
+    </div>
+
+{% endfor %}
+
+</div>
+</body>
+</html>
+{% endblock %}

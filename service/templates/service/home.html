@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+    <head>
+
+</head>
+
+  <title>Onsite</title>
+
+
+
+</head>
+{% load static %}
+ <!-- Bootstrap core CSS -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/scrolling-nav.css' %}" rel="stylesheet">
+
+<link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top" id="mainNav">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark  fixed-top" id="mainNav"> -->
+   <!-- <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top" id="mainNav">-->
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Onsite</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="{% url 'login' %}" class="btn btn-outline-secondary">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a href="{% url 'company_signup' %}" class="btn btn-primary ml-2">Sign Up</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <header class="video-header">
+  <video src="https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/Island%20-%204141.mp4" autoplay loop playsinline muted></video>
+   <div class="overlay">
+    <h1>
+      You all are the builders of India
+    </h1>
+     <h3>
+      We're here to help
+    </h3>
+     <h3 id="learn-more">
+      Learn More
+    </h3>
+
+  </div>
+</header>
+
+<section id="under-header" class="under-header">
+
+  <section id="about" class="about">
+    <div class="container" >
+      <div class="row" data-aos="fade-up" style = "height: 1%;">
+        <div class="col-lg" style = "padding-top:11%;" >
+          <h2>Matching You With the Best Manufacturers</h2>
+          <p class="lead">Price and experience optimization for each of your projects. Find the ideal suppliers to link with, and save time by dealing with them directly rather than going through middle men. </p>
+          </div>
+  <div class="col-lg" style = "text-align:center;">
+
+    <img src="{% static 'images/projects.png' %}" class="img-fluid" alt="">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="bg-light">
+    <div class="container" >
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg" style = "text-align:center;">
+
+  <img src="{% static 'images/projmanage.png' %}" class="projimage img-fluid" alt="" id = "projimage">
+        </div>
+        <div class="col-lg" style="padding-left: 11%; padding-top: 10%;">
+
+           <h2>Project Management</h2>
+          <p class="lead">Keep track of all your projects. Onsite allows you to keep track of all your projects and expenses in one place, making management more convenient and effortless than ever.</p>
+
+
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row" data-aos="fade-up">
+        <div class="col-lg" style="padding-top:2%;">
+          <h2>Record Keeping</h2>
+          <p class="lead">Utilizing Onsite comes with the benefit of keeping your expenses cataloged in one place, saving you from the tedious task of manual bookkeeping. </p>
+        </div>
+        <div class="col-lg" style = "text-align:center;">
+<img src="{% static 'images/finances.png' %}" class="img-fluid" style="width:75%; height:70%;" alt="" id = "">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class=" three far fa-thumbs-up"></i>
+              <span data-toggle="counter-up">232</span>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="three far fa-file-alt"></i>
+              <span data-toggle="counter-up">521</span>
+              <p>Projects</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="three fas fa-phone-alt"></i>
+              <span data-toggle="counter-up">1,463</span>
+              <p>Hours Of Support</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+             <i class="three fas fa-people-carry"></i>
+              <span data-toggle="counter-up">15</span>
+              <p>Hard Workers</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  <!-- ======= End of Counts Section ======= -->
+<!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+
+        <div class="owl-carousel testimonials-carousel" data-aos="zoom-in">
+
+          <div class="testimonial-item">
+            <img src="{% static 'images/projects.png' %}" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="{% static 'images/projects.png' %}" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="{% static 'images/projects.png' %}" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="{% static 'images/projects.png' %}" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="{% static 'images/projects.png' %}" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+   <section id="end">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg" data-aos= "fade-right"  style = "text-align:center;">
+
+  <img src="{% static 'images/1.jpg' %}" class="buildingimage img-fluid" alt="">
+        </div>
+        <div class="col-lg" data-aos= "fade-left"  style="padding-left: 11%; padding-top:12%;">
+
+           <h2>Your Company and Onsite</h2>
+          <p class="lead">We look forward to helping your business flourish! We have more detailed descriptions of our services if you would like to
+            <a href="#" style = "color: #3AAFA9; text-decoration: none;" class="more-info">learn more</a>, for registration jump to <a href="{% url 'company_signup' %}" style = "color: #3AAFA9; text-decoration: none;" class="more-info">sign up</a> .</p>
+
+
+        </div>
+
+        </div>
+      </div>
+
+  </section>
+  <!-- Footer -->
+     </section>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Onsite</h3>
+              <p class="pb-3"><em>You all are the builders of India, we're here to help.</em></p>
+              <p>
+                Merlin Infinite DN-51, Salt Lake Bypass <br>
+                Kolkata, West Bengal 700051, India <br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> contact@on-site.in<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="fas fa-chevron-right" ></i> <a href="#">Home</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="{% url 'services_info' %}">Services</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="fas fa-chevron-right"></i> <a href="{% url 'services_vendor_matching' %}">Vendor Matching</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="{% url 'services_project_management' %}">Project Management</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="{% url 'services_record_keeping' %}">Record Keeping</a></li>
+              <li><i class="fas fa-chevron-right"></i> <a href="{% url 'services_consulting' %}">Consulting</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to stay updated on company changes or upcoming developments!</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="{% static 'js/scrolling-nav.js' %}"></script>
+
+</body>
+
+</html>

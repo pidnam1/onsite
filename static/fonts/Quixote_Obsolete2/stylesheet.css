@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Quixote Obsolete';
+    src: url('Quixote-Obsolete.eot');
+    src: local('Quixote Obsolete'), local('Quixote-Obsolete'),
+        url('Quixote-Obsolete.eot?#iefix') format('embedded-opentype'),
+        url('Quixote-Obsolete.woff2') format('woff2'),
+        url('Quixote-Obsolete.woff') format('woff'),
+        url('Quixote-Obsolete.ttf') format('truetype'),
+        url('Quixote-Obsolete.svg#Quixote-Obsolete') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
